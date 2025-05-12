@@ -1,0 +1,29 @@
+/* global.css */
+
+/* Fuentes y estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Estilo general para las secciones */
+.section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Hero section */
+.hero {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}

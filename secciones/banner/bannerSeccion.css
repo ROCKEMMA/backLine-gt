@@ -1,0 +1,41 @@
+/* banner/bannerSeccion.css */
+
+.banner {
+    background: url('../imagenes/banner-background.jpg') no-repeat center center/cover;
+    background-color: rgb(40, 40, 40);
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.banner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.banner button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.banner button:hover {
+    background-color: #e65c00;
+}
