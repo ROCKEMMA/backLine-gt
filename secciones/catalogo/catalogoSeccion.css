@@ -1,7 +1,7 @@
 .section-catalogo {
-    max-width: 100rem;
+    max-width: 130rem;
     padding: 2rem;
-    margin: auto;
+    margin: 4rem auto;
 }
 .section-catalogo > h2 {
     font-size: var(--size-h2);
@@ -11,5 +11,5 @@
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-    max-width: 100rem;
+    max-width: 130rem;
 }
