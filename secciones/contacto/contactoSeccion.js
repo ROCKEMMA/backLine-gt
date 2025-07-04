@@ -1,4 +1,9 @@
+import { cargarCSS } from "../../controler/cargarCss.js";
+
 export function contactoSeccion() {
+
+  cargarCSS('secciones/contacto/contactoSeccion.css')
+
   const section = document.createElement('section');
   section.classList.add('section');
   section.classList.add('contacto');

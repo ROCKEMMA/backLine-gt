@@ -10,6 +10,6 @@ document.body.appendChild(headerSeccion());
 document.body.appendChild(bannerSeccion());
 document.body.appendChild(nosotrosSeccion());
 document.body.appendChild(catalogoSeccion());
-document.body.appendChild(galeriaSeccion());
-document.body.appendChild(contactoSeccion());
+//document.body.appendChild(galeriaSeccion());
+//document.body.appendChild(contactoSeccion());
 document.body.appendChild(footerSeccion());

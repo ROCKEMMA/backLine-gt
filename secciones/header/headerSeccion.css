@@ -1,16 +1,66 @@
-/* header/headerSeccion.css */
-
 header {
-    background-color: #111;
-    color: white;
-    padding: 1rem 2rem;
+    background-color: white;
+    padding: 0.5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-header nav a {
+header h1 {
+    color: var(--color-texto);
+    font-size: 1.8rem;
+}
+
+header h1 span {
+    color: var(--color-naranja);
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
     color: white;
+    cursor: pointer;
+    transform: scaleX(-1);
+}
+
+.nav-menu a {
+    color: var(--color-texto);
     margin-left: 1rem;
     text-decoration: none;
+    font-size: var(--size-p);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 2rem;
+        z-index: 100;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        margin: 1rem 0;
+        font-size: var(--size-h3);
+    }
 }

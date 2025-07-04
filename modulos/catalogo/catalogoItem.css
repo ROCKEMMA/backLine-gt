@@ -1,9 +1,69 @@
-/* modulos/catalogo/catalogoItem.css */
-
 .card {
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    width: 100%;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    grid-template-rows: auto auto 1fr auto auto;
+    gap: 1rem;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: var(--size-p);
+
+    grid-column: 1/3;
+}
+
+.card .categoria {
+    font-size: var(--size-small);
+    color: gray;
+    margin-top: -1rem;
+
+    grid-column: 1/3;
+}
+
+.div-img {
+    width: 100%;
+    border-radius: 8px;
+    grid-column: 1/3;
+    overflow: hidden;
+}
+.div-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card p {
+    margin: 5px 0;
+    line-height: 1.4;
+    font-size: var(--size-p);
+
+    grid-column: 1/3;
+}
+
+.precio-tiempo {
+    font-size: var(--size-p);
+    font-weight: bold;
+}
+
+.tiempo-disponible {
+    padding: 0.1rem 0.5rem;
+    border-radius: 3rem;
+    background-color: #f87b2d;
+    color: white;
+    font-size: var(--size-small);
+    font-weight: bold;
+    justify-self: end;
+}
+
+@media (max-width: 1000px) {
+.card h3 {
+        font-size: var(--size-h3);
+    }
 }

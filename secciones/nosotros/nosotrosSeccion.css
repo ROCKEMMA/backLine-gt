@@ -1,0 +1,20 @@
+.section-nosotros {
+    max-width: 100rem;
+    padding: 2rem;
+    margin: 4rem auto;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-nosotros h2 {
+    font-size: var(--size-h2);
+}
+
+.section-nosotros p{
+    max-width: 80rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: var(--size-p);
+}
